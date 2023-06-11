@@ -10,17 +10,17 @@ export default function ProbabilitiesCardComponent({cardValue, runningCount, hig
     >
       <ListItem>
         <ListItemLabel description={`The running count of the 8 decks`}>
-            {`Count: Enter Count Here`}
+            {`Count: ${runningCount}`}
         </ListItemLabel>
       </ListItem>
       <ListItem>
         <ListItemLabel description={`The probability of either a 10 or Ace being the next card`}>
-            {`High Card: Enter High Card Prob`}
+            {`High Card: ${highCardProb}%`}
         </ListItemLabel>
       </ListItem>
       <ListItem>
         <ListItemLabel description={`The probability of either a 2, 3, 4, 5, or 6 being the next card`}>
-            {`Low Card: Enter Low Card Prob`}
+            {`Low Card: ${lowCardProb}%`}
         </ListItemLabel>
       </ListItem>
     </Card>
