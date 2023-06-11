@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Card} from 'baseui/card';
 import {ListItem, ListItemLabel} from 'baseui/list';
 
-export default function ProbabilitiesCardComponent({cardValue, runningCount, highCardProb, lowCardProb}) {
+export default function ProbabilitiesCardComponent({runningCount, highCardProb, lowCardProb}) {
   return (
     <Card
       overrides={{Root: {style: {width: '328px'}}}}

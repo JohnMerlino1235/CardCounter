@@ -1,7 +1,5 @@
 import * as React from 'react';
-import {Card, StyledBody, StyledAction, StyledTitle} from 'baseui/card';
-import {Button} from 'baseui/button';
-import {ListItem, ListItemLabel} from 'baseui/list';
+import {Card, StyledBody} from 'baseui/card';
 
 export default function CardComponent({cardValue, cardImage, cardPercent}) {
   return (
