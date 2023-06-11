@@ -79,20 +79,20 @@ function App() {
     // remove card from deck
     for(const currentCardIndex in currentDeck) {
       if(currentDeck[currentCardIndex] === card) {
-        console.log('index of 2', currentDeck.indexOf("2"))
         currentDeck.splice(currentCardIndex, 1);
+        
+        // update current count for low card ( + 1 )
+        if(card === '2' || card === '3' || card === '4' || card === '5' || card === '6') {
+          setCount(count + 1);
+        }
+
+        // update current count for high card ( -1 )
+        if(card === 'A' || card === '10') {
+          setCount(count - 1);
+        }
+
         break;
       }
-    }
-
-    // update current count for low card ( + 1 )
-    if(card === '2' || card === '3' || card === '4' || card === '5' || card === '6') {
-      setCount(count + 1);
-    }
-
-    // update current count for high card ( -1 )
-    if(card === 'A' || card === '10') {
-      setCount(count - 1);
     }
 
     // update probability
