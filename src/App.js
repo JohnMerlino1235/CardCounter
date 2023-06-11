@@ -8,16 +8,16 @@ import CardComponent from './components/cardComponent.js';
 import {Button, KIND} from 'baseui/button';
 import ProbabilitiesCardComponent from './components/probabilitiesCard.js';
 import {Card, StyledBody, StyledAction} from 'baseui/card';
-import twoImage from './2_of_clubs.png';
-import threeImage from './3_of_clubs.png';
-import fourImage from './4_of_clubs.png';
-import fiveImage from './5_of_clubs.png';
-import sixImage from './6_of_clubs.png';
-import sevenImage from './7_of_clubs.png';
-import eightImage from './8_of_clubs.png';
-import nineImage from './9_of_clubs.png';
-import tenImage from './10_of_clubs.png';
-import aceImage from './ace_of_clubs.png';
+import twoImage from './assets/2_of_clubs.png';
+import threeImage from './assets/3_of_clubs.png';
+import fourImage from './assets/4_of_clubs.png';
+import fiveImage from './assets/5_of_clubs.png';
+import sixImage from './assets/6_of_clubs.png';
+import sevenImage from './assets/7_of_clubs.png';
+import eightImage from './assets/8_of_clubs.png';
+import nineImage from './assets/9_of_clubs.png';
+import tenImage from './assets/10_of_clubs.png';
+import aceImage from './assets/ace_of_clubs.png';
 
 const engine = new Styletron();
 const Centered = styled('div', {
