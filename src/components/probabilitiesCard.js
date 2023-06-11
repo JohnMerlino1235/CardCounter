@@ -9,8 +9,13 @@ export default function ProbabilitiesCardComponent({runningCount, highCardProb, 
       title={`Count and Probabilities`}
     >
       <ListItem>
-        <ListItemLabel description={`The running count of the 8 decks`}>
+        <ListItemLabel description={`The running count of the 8 decks (not the true count)`}>
             {`Count: ${runningCount}`}
+        </ListItemLabel>
+      </ListItem>
+      <ListItem>
+        <ListItemLabel description={`The true running count of the 8 decks`}>
+            {`True Count: ${(runningCount / 8).toFixed(2)}`}
         </ListItemLabel>
       </ListItem>
       <ListItem>
