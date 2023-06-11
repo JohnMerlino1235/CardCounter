@@ -73,7 +73,7 @@ function App() {
       setAmountOfAces(currentDeck.filter(x => x === "A").length);
       setUpdateProbability(false);
     }
-  }, [updateProbability])
+  }, [updateProbability, currentDeck])
 
   function updateCurrentDeck(card) {
     // remove card from deck
