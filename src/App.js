@@ -18,6 +18,7 @@ import eightImage from './assets/8_of_clubs.png';
 import nineImage from './assets/9_of_clubs.png';
 import tenImage from './assets/10_of_clubs.png';
 import aceImage from './assets/ace_of_clubs.png';
+import RecommendedBetComponent from './components/recommendedBetComponent.js';
 
 const engine = new Styletron();
 const Centered = styled('div', {
@@ -146,6 +147,7 @@ function App() {
               </Button>
             </StyledAction>
           </Card>
+          <RecommendedBetComponent runningCount={count}/>
         </CardDiv>
         <CardDiv>
           <ThemeProvider
