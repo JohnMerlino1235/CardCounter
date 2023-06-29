@@ -3,11 +3,6 @@ import {Card} from 'baseui/card';
 import {ListItem, ListItemLabel} from 'baseui/list';
 
 export default function RecommendedBetComponent({runningCount}) {
-    console.log((runningCount / 8).toFixed(0) + 1);
-    console.log('trueCount', runningCount / 8);
-    console.log('minus', ((runningCount / 8).toFixed(0)) + 1)
-    console.log('parseInt', parseInt(runningCount / 8));
-        console.log('parseInt + 1', parseInt(runningCount / 8) + 1);
   return (
     <Card
       overrides={{Root: {style: {width: '328px'}}}}

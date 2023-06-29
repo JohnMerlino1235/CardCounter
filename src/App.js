@@ -19,6 +19,7 @@ import nineImage from './assets/9_of_clubs.png';
 import tenImage from './assets/10_of_clubs.png';
 import aceImage from './assets/ace_of_clubs.png';
 import RecommendedBetComponent from './components/recommendedBetComponent.js';
+import StrategyComponent from './components/strategyComponent.js';
 
 const engine = new Styletron();
 const Centered = styled('div', {
@@ -123,7 +124,7 @@ function App() {
     setCount(0);
     setUpdateProbability(true);
   }
-
+  console.log(((((amountOfTens * (amountOfTens - 1)) / (currentDeck.length * (currentDeck.length - 1)))) * 100).toFixed(2));
   return (
     <StyletronProvider value={engine}>
       <BaseProvider theme={LightTheme}>
@@ -133,7 +134,10 @@ function App() {
         <RulesComponent />
         <CardDiv>
           <ProbabilitiesCardComponent cardValue={'Ace'} runningCount={count} highCardProb={(((amountOfTens + amountOfAces) / currentDeck.length) * 100).toFixed(2)} 
-          lowCardProb={(((amountOfTwos + amountOfThrees + amountOfFours + amountOfFives + amountOfSixes) / currentDeck.length) * 100).toFixed(2)}/>
+          lowCardProb={(((amountOfTwos + amountOfThrees + amountOfFours + amountOfFives + amountOfSixes) / currentDeck.length) * 100).toFixed(2)}
+          blackjackProb={(((amountOfAces * amountOfTens) / (currentDeck.length * (currentDeck.length - 1))) * 100).toFixed(2)}
+          twentyScoreProb={(((amountOfTens * (amountOfTens - 1)) / (currentDeck.length * (currentDeck.length - 1))) * 100).toFixed(2)}
+          />
           <Card
               overrides={{Root: {style: {width: '328px'}}}}
               title={`Reset the Counter`}

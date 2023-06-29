@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Card} from 'baseui/card';
 import {ListItem, ListItemLabel} from 'baseui/list';
 
-export default function ProbabilitiesCardComponent({runningCount, highCardProb, lowCardProb}) {
+export default function ProbabilitiesCardComponent({runningCount, highCardProb, lowCardProb, blackjackProb, twentyScoreProb}) {
   return (
     <Card
       overrides={{Root: {style: {width: '328px'}}}}
@@ -28,6 +28,17 @@ export default function ProbabilitiesCardComponent({runningCount, highCardProb, 
             {`Low Card: ${lowCardProb}%`}
         </ListItemLabel>
       </ListItem>
+      <ListItem>
+        <ListItemLabel description={`The probability of Blackjack this hand`}>
+            {`Blackjack: ${blackjackProb}%`}
+        </ListItemLabel>
+      </ListItem>
+      <ListItem>
+        <ListItemLabel description={`The probability hand value of 20`}>
+            {`Double Ten: ${twentyScoreProb}%`}
+        </ListItemLabel>
+      </ListItem>
+
     </Card>
   );
 }
