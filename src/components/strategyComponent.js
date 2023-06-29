@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {Accordion, Panel} from 'baseui/accordion';
-import {Card, StyledBody, StyledAction} from 'baseui/card';
-import {Button} from 'baseui/button';
+import {Card} from 'baseui/card';
 
 export default function StrategyComponent() {
   return (

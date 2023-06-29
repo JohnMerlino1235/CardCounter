@@ -19,7 +19,6 @@ import nineImage from './assets/9_of_clubs.png';
 import tenImage from './assets/10_of_clubs.png';
 import aceImage from './assets/ace_of_clubs.png';
 import RecommendedBetComponent from './components/recommendedBetComponent.js';
-import StrategyComponent from './components/strategyComponent.js';
 
 const engine = new Styletron();
 const Centered = styled('div', {
